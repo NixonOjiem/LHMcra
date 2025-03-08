@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Dummy component start */
+.dummyComponent{
+  width: 100%;
+  height: 120vh;
+  background-color: #791818;
+}
+/* Dummy component end */
+
+/* Flash sale component start */
+
+.flashSale{
+  width: 100%;
+  height: 5vh;
+  background-color: #11569c;
+}
+
+/* Flash sale component end*/
+
+
+/* Navigation bar component start */
+.navigationBar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000; /* Ensure it stays on top */
+}
+/* Navigation bar component end */
