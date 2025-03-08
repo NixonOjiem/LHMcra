@@ -124,4 +124,10 @@ code {
 .cart, .profile {
   margin: 20px; /* Add some spacing between cart and profile */
 }
+
+.iconPack{
+  width: 30px;
+  height: 30px;
+  color:#b41c1c;
+}
 /* Navigation bar component end */
