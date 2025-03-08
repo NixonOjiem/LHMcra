@@ -29,6 +29,11 @@ code {
   background-color: #11569c;
 }
 
+.flashSale h2{
+  float: left;
+  margin: 0px;
+}
+
 /* Flash sale component end*/
 
 
@@ -38,7 +43,85 @@ code {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #333;
+  height: 80px;
+  background-color: #ffffff;
   z-index: 1000; /* Ensure it stays on top */
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0; /* Add some padding for spacing */
+}
+
+.logoIcon {
+  width: 160px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+}
+
+.logoIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.searchComponent {
+  flex-grow: 1; /* Allow the search component to grow and take available space */
+  text-align: center; /* Center the content inside the search component */
+  height: 30px;
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Horizontally centers the items */
+  margin-left: auto; /**align items centrally**/
+  margin-right: auto; /**align items centrally**/
+  align-items: center; /* Vertically centers the items */
+  justify-content: center; /* Horizontally centers the items */
+  border-radius: 10px;
+}
+
+.searchContainer{
+  background-color: #CA0000;
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Horizontally centers the items */
+  margin-left: auto; /**align items centrally**/
+  margin-right: auto; /**align items centrally**/
+  border-radius: 10px;
+}
+
+.searchInput{
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.searchInput:focus{
+  outline: none;
+  border: 2px solid #b41c1c;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+
+}
+
+.searchButton{
+  width: 10%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #b41c1c;
+  color: white;
+  margin: 5px;
+  border: none;
+}
+
+.searchButton:hover{
+  background-color: #791818;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.cart, .profile {
+  margin: 20px; /* Add some spacing between cart and profile */
 }
 /* Navigation bar component end */

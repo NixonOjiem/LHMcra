@@ -3,7 +3,7 @@ import React from 'react'
 function FlashSale() {
   return (
     <div className='flashSale'>
-        FlashSale
+        <h2>FlashSale</h2>
     </div>
   )
 }
