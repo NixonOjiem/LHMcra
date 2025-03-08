@@ -23,11 +23,14 @@ function NavigationBar() {
       </section>
 
       <section className='categoriesSection'>
-        Home <br />
-        Home <br />
-        Home <br />
-        Home <br />
+      <span className='categoryItem'>New Releases</span>
+        <span className='categoryItem'>Home & Garden</span>
+        <span className='categoryItem'>Electronics</span> 
+        <span className='categoryItem'>Stationary</span>
+        <span className='categoryItem'>Baby Products</span>
+        <span className='categoryItem'>Hand Tools</span>
       </section>
+
     </div>
   );
 }

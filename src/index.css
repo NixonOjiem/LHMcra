@@ -39,11 +39,12 @@ code {
 
 /* Navigation bar component start */
 .navigationBar {
+  position: relative; /* Needed for absolute positioning of children */
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #ffffff;
   z-index: 1000; /* Ensure it stays on top */
   display: flex;
@@ -123,6 +124,8 @@ code {
 
 .cart, .profile {
   margin: 20px; /* Add some spacing between cart and profile */
+  cursor: pointer; /* Change cursor to pointer on hover */
+
 }
 
 .iconPack{
@@ -130,4 +133,119 @@ code {
   height: 30px;
   color:#b41c1c;
 }
+
+.iconPack:hover{
+  color: #791818;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.categoriesSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Add any additional styling you need for the categories section */
+  text-align: center;
+  padding: 5px 0; /* Optional for spacing */
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Horizontally centers the items */
+  margin-top: 10px;
+}
+
+.categoryItem{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.categoryItem:hover{
+  color: #b41c1c;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
 /* Navigation bar component end */
+
+
+
+/* Image slider start */
+.slider-container {
+  position: relative;
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  ;
+}
+
+.slides-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: rgba(255,255,255,0.9);
+}
+
+.dot:hover {
+  background: rgba(255,255,255,0.8);
+}
+/* Image Slider end */
