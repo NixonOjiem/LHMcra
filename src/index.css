@@ -209,7 +209,7 @@ code {
 /* Image slider start */
 .slider-container {
   position: relative;
-  width: 50%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -219,7 +219,7 @@ code {
 
 .slider {
   position: relative;
-  height: 400px; /* Adjust height as needed */
+  height: 500px; /* Adjust height as needed */
 }
 
 .slides-track {
@@ -290,19 +290,29 @@ code {
 
 /*Popular Category start*/
 .categoryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Space between items */
-  margin-top: 20px;
-  width: 100%;
-}
-
-.category {
-  flex: 0 0 calc(33.333% - 20px); /* 33.33% width minus gap */
-  max-width: calc(33.333% - 20px); /* For older browsers */
-  text-align: center;
-  padding: 15px;
-  box-sizing: border-box;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* Control overall container width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .category {
+    flex: 0 0 calc(33.333% - 20px); /* 33.33% width minus gap */
+    max-width: 600px; /* Set maximum width for each category */
+    min-width: 150px; /* Set minimum width for responsiveness */
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #963333;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 /*Popular Category End*/
