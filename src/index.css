@@ -316,3 +316,69 @@ code {
     cursor: pointer;
   }
 /*Popular Category End*/
+
+/* New releases category start*/
+.newReleases {
+  padding: 20px;
+}
+
+.releasesContainer {
+  margin-bottom: 40px;
+}
+
+.releasesContainer h3 {
+  margin: 0 0 15px 15px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Container for scrollable items */
+.releasesContainer > div {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
+/* Styling individual release items as cards */
+.releaseItem {
+  flex-shrink: 0;
+  width: 250px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
+}
+
+.releaseItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Scrollbar styling for WebKit browsers */
+.releasesContainer > div::-webkit-scrollbar {
+  height: 8px;
+}
+
+.releasesContainer > div::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.releasesContainer > div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.releasesContainer > div::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+/* New releases category end */
