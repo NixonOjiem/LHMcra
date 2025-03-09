@@ -382,3 +382,13 @@ code {
   background: #666;
 }
 /* New releases category end */
+
+/* Footer start */
+.footer{
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-top: #666 0.5px solid;
+  width: 100%;
+  height: 50vh;
+}
+/*Footer end*/
