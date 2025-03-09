@@ -14,12 +14,13 @@ function NavigationBar() {
       <SearchComponent />
 
       <section className='cart'>
-        <FontAwesomeIcon icon={faCartShopping} className='iconPack'/>
+        <FontAwesomeIcon icon={faCartShopping} className='iconPack'/> <br />
+        cart
       </section>
 
       <section className='profile'>
-        <FontAwesomeIcon icon={faUser} className='iconPack'/>
-        
+        <FontAwesomeIcon icon={faUser} className='iconPack'/> <br />
+        profile
       </section>
 
       <section className='categoriesSection'>
