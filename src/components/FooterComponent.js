@@ -29,8 +29,21 @@ function FooterComponent() {
                 <li>Phone: 123-456-7890</li>
                 <li>Email: </li>
                 <li>Address: 1234 Highridge Nairobi</li>
-                
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li> 
             </ul>
+        </div>
+
+        <div className='helpCenter'>
+            <p>Help Center</p>
+            <ul>
+                <li>My Account</li>
+                <li>Order Status</li>
+                <li>Community Forum</li>
+                <li>Returns</li>
+            </ul>
+
         </div>
 
     </div>
