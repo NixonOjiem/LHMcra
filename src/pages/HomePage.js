@@ -6,6 +6,7 @@ import ImageSlider from '../components/ImageSlider'
 import PopularCategory from '../components/PopularCategory'
 import NewReleasesComponent from '../components/NewReleasesComponent'
 import FooterComponent from '../components/FooterComponent'
+import BottomNavigationBar from '../components/BottomNavigationBar'
 
 function HomePage() {
     const images = [
@@ -24,6 +25,7 @@ function HomePage() {
         <PopularCategory />
         <NewReleasesComponent />
         <FooterComponent />
+        <BottomNavigationBar />
         {/* <DummyComponent /> */}
 
     </div>

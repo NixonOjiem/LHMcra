@@ -477,3 +477,35 @@ code {
 }
 
 /* End of Footer Styles */
+
+/* Bottom Navigation bar for responsiveness start */
+.bottomNavigationBar{
+    position: sticky;
+    bottom: 0;
+    height: '10vh';
+    width: '100%';
+    background-color: #888; 
+    border-top: '1px solid #ccc';
+    z-index: 1000;
+    display: 'flex';
+    align-items: 'center';
+    justify-Content: 'center';
+
+}
+
+.bottomNavigationBar{
+    display: none;
+}
+
+@media (max-width: 799px) {
+  .categoriesSection {
+    display: none !important;
+  }
+
+  .bottomNavigationBar{
+    display:block ;
+  }
+}
+
+
+/*Bottom Navigtion bar for responsiveness end*/
