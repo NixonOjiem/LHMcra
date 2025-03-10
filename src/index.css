@@ -203,6 +203,17 @@ code {
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 }
+
+.linkItems{
+  color: #0f0e0e;
+  text-decoration: none;
+}
+
+.linkItems:hover{
+  color: #b41c1c;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
 /* Navigation bar component end */
 
 

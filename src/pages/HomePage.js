@@ -18,7 +18,7 @@ function HomePage() {
 
   return (
     <div>
-        <FlashSale />
+        {/* <FlashSale /> */}
         <NavigationBar />
         <ImageSlider images ={images}/>
         <PopularCategory />
