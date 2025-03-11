@@ -497,7 +497,7 @@ code {
     display: none;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 780px) {
   .categoriesSection {
     display: none !important;
   }
@@ -505,6 +505,7 @@ code {
   .bottomNavigationBar{
     display:block ;
   }
+  
 }
 
 

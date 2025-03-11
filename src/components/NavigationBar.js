@@ -24,7 +24,13 @@ function NavigationBar() {
         
       </section>
 
-      <section className='categoriesSection'>
+
+
+    </div>
+  );
+}
+
+export default NavigationBar;      <section className='categoriesSection'>
         <span className='categoryItem'> 
             <Link to="/new-releases" className='linkItems'>New Releases</Link>
         </span>
@@ -44,9 +50,3 @@ function NavigationBar() {
             <Link to="/hand-tools" className='linkItems'>Hand Tools</Link>
         </span>
       </section>
-
-    </div>
-  );
-}
-
-export default NavigationBar;
