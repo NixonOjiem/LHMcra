@@ -510,3 +510,147 @@ code {
 
 
 /*Bottom Navigtion bar for responsiveness end*/
+
+
+/* Product Page Styles */
+
+.product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.main-image {
+  width: 50%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.details-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.details-section h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.rating {
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.price {
+  font-size: 28px;
+  color: #b12704;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.features h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.features ul {
+  list-style: disc;
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.features li {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.add-to-cart, .buy-now {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.add-to-cart {
+  background-color: #ffd814;
+  color: #0f1111;
+}
+
+.buy-now {
+  background-color: #ffa41c;
+  color: #0f1111;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  opacity: 0.9;
+}
+
+.shipping-info {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.shipping-info p {
+  margin: 5px 0;
+  color: #565959;
+}
+
+.description-section {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+.description-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.description-section p {
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row;
+  }
+  
+  .details-section {
+    padding: 0 40px;
+  }
+}
+/*End of product page styles*/

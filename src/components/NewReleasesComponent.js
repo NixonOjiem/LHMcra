@@ -1,13 +1,22 @@
 import React from 'react'
 
 function NewReleasesComponent() {
+
+    const handleClick = () => {
+        console.log('Gardening one clicked');
+        
+    }
+
   return (
     <div className='newReleases'>
         <h2>New Releases</h2>
         <div className="releasesContainer">
             <h3>Electronics</h3>
             <div>
-                <span className='releaseItem'>Electronics one</span>
+                <span className='releaseItem'>
+                    <img src='/assets/imageone.png' alt='phone' />
+                    Electronics one
+                </span>
                 <span className='releaseItem'>Electronics two</span>
                 <span className='releaseItem'>Electronics three</span>
                 <span className='releaseItem'>Electronics four</span>
@@ -20,7 +29,7 @@ function NewReleasesComponent() {
         <div className="releasesContainer">
         <h3>Gardening</h3>
             <div className='releaseItems'>
-                <span className='releaseItem'>Gardening one</span>
+                <span className='releaseItem' onClick={handleClick}>Gardening one</span>
                 <span className='releaseItem'>Gardening two</span>
                 <span className='releaseItem'>Gardening three</span>
                 <span className='releaseItem'>Gardening four</span>

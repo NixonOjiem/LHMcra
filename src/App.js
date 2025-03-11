@@ -7,6 +7,7 @@ import ElectronicsPage from './pages/ElectronicsPage';
 import StationaryPage from './pages/StationaryPage';
 import BabyProductsPage from './pages/BabyProductsPage';
 import HandToolsPage from './pages/HandToolsPage';
+import ViewProductsPage from './pages/ViewProductsPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/stationary' element={<StationaryPage />} />
           <Route path='/baby-products' element={<BabyProductsPage />} />
           <Route path='/hand-tools' element={<HandToolsPage />} />
+          <Route path='/view-product' element={<ViewProductsPage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
       </Router>

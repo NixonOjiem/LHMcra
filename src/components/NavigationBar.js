@@ -23,14 +23,8 @@ function NavigationBar() {
         <FontAwesomeIcon icon={faUser} className='iconPack'/> <br />
         
       </section>
-
-
-
-    </div>
-  );
-}
-
-export default NavigationBar;      <section className='categoriesSection'>
+      
+      <section className='categoriesSection'>
         <span className='categoryItem'> 
             <Link to="/new-releases" className='linkItems'>New Releases</Link>
         </span>
@@ -50,3 +44,9 @@ export default NavigationBar;      <section className='categoriesSection'>
             <Link to="/hand-tools" className='linkItems'>Hand Tools</Link>
         </span>
       </section>
+
+    </div>
+  );
+}
+
+export default NavigationBar;      
